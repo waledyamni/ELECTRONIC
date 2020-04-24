@@ -1,0 +1,483 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+body {
+    scroll-behavior: smooth;
+  }
+a {
+    color:  #2E4053;
+}
+a:hover {
+    color:#641E16;
+    
+    font-weight: 600;
+
+    
+}
+header {
+   
+    display: flex;
+    width: 70%;
+    margin: 10px auto 10px ;
+    position: relative;
+    align-items: center;
+}
+.logo-container {
+  
+   flex: 1;
+   align-items: center;
+}
+nav {
+    
+    flex: 2;
+}
+.nav-links {
+    justify-content:space-evenly;
+}
+.cart {
+   
+   flex: 1;
+   justify-content: flex-end;
+
+}
+.logo-container, .nav-links , .cart {
+    display: flex;
+} 
+h4 {
+    margin-left: .5rem;
+    color: #566573;
+}
+h4:hover {
+    color:  #641E16;
+    animation: logo .6s ease;
+}
+@keyframes logo {
+    0% {
+        opacity: 0%;
+        transform: translateX(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+
+.presentation {
+     display: flex;
+     width: 80%;
+     min-height: 60vh;
+     margin: auto;
+     align-items: center;
+}
+.cover img {
+    height: 60vh;
+    filter: drop-shadow(0px 10px 5px black);
+    animation: drop 1.5s ease;
+}
+.para {
+    max-width: 400px;
+}
+.introduction {
+    flex: 1;
+
+}
+.cover {
+    flex: 1;
+}
+.intro-text {
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: 0 1.5rem 2rem 0;
+    text-transform: uppercase;
+}
+.cat {
+    
+    padding: 50px 0px 0px 0px;
+
+}
+.cta-select {
+    border: 2px solid #641E16;
+    background: transparent;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: .5rem .5rem .5rem .5rem;
+}
+.cta-add {
+    margin: 10px 0px 0px 0px;
+    background: #641E16;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+    color: white;
+    border-radius: .5rem .5rem .5rem .5rem;
+}
+.big-cercle {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    opacity: .5;
+    height: 77%;
+}
+.medium-circle {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    z-index: -1;
+    opacity: .5;
+    height: 30%;
+}
+.small-cercle {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    bottom: 5%;
+    left: 25%;
+    z-index: -1;
+    height: 100%;
+}
+.cta-select:hover {
+    color: white;
+    background-color: #273746;
+    border: none;
+} 
+.cta-add:hover {
+    color: white;
+    background-color:#D98880;
+    border: none;
+} 
+
+@keyframes drop {
+    0% {
+        opacity: 0%;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .logo-container {
+        display: table-cell;
+        width: 20%;
+        font-size: 12px;
+        
+    }
+    .cart {
+        height:30px;
+    }
+    .nav-links {
+        font-size: 8px;
+        font-weight: 700;
+       
+        margin: 0px;
+    }
+    .presentation  {
+        flex-direction: column;
+    }
+    .introduction   {
+        text-align: center;
+       
+    }
+    .nav-links {
+        padding-left: 5px;
+        margin-left: .3px;
+    }
+    nav {
+        padding: 2px;
+        justify-content: stretch;
+    }
+    .h4 {
+        margin-left: .4rem;
+    }
+    header {
+        width: 100%;
+        display: table;
+       
+    }
+    .cart {
+        flex: 0;
+    }
+}
+/* products area */
+.big-font {
+    color: #273746  ;
+    text-align: center;
+    font-size: 90px;
+    font-weight: 900;
+    text-shadow: 0rem .7rem .5rem #aaa ;
+    text-transform: uppercase;
+    
+}
+.products {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    margin: 10px auto 10px ;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+}
+.product1 {
+    flex: 1;
+    text-align: center;
+}
+.product2 {
+    flex: 1;
+    text-align: center;
+}
+.product3 {
+    flex: 1;
+    text-align: center;
+}
+.para1 {
+    text-align: left;
+    padding-left: 70px;
+    padding-top: 10px;
+    letter-spacing: 2px;
+}
+.free0 {
+    width: 100%;
+    height: 230px;
+}
+.free {
+    width: 100%;
+    height: 50px;
+}
+
+/* end of products area*/
+/* iphone section */
+.iphone-products {
+    display: flex;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    align-items: center;
+}
+.iphone {
+   
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+.iphone11 {
+   
+    height: 600px;
+  
+}
+.iphone11pro {
+   
+    height: 600px;
+    
+   
+}
+.img1 {
+    margin-right: 0px;
+    flex: 1;
+    padding: 0px 0px 0 30px;
+    position: relative;
+
+}
+.img2 {
+    
+    flex:1 ;
+    padding: 0px 40px 0 30px;
+}
+.color1 {
+    text-align: center;
+    color: black;
+    background-color:rgb(238, 237, 237);
+    height: 244px;
+    width: 600px;
+    padding-top: 10px;
+    margin-left: 30px;
+    font-size: 36px;
+    
+}
+span {
+    font-size: 12px;
+}
+.color2 {
+    text-align: center;
+    color: white;
+    background-color:black;
+    height: 300px;
+    width: 600px;
+    position: relative;
+    margin-left: 30px;
+    font-size: 36px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.span2 {
+    font-size: 12px;
+    color: white;
+}
+.se {
+    padding-bottom: 10px;
+}
+.xr {
+    padding-bottom: 10px;
+}
+/* iphone section ends*/ 
+/* about */
+.about {
+    display: flex;
+    margin:40px auto;
+    width: 90%;
+    height: 600px;
+    background-color :#5D6D7E  ;
+
+}
+.about-text {
+    flex: 1;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+.about-img {
+    flex: 1;
+}
+.about-ti {
+    font-size: 28px;
+    font-weight: 600;
+    padding: 20px;
+    padding-left: 15px;
+    text-shadow: 0 .3rem .5rem  black;
+}
+.about-pa {
+    font-size: 16px;
+    font-weight: 300;
+    padding: 20px 20px;
+    text-align: left;
+    letter-spacing: 1px;
+}
+.apple-logo:hover {
+    opacity:20% ;
+}
+/* end of about */
+/*starts contact */
+.contact {
+    display: flex;
+    width: 90%;
+    height: 300px;
+    background-color: #D6DBDF;
+    margin: 0 auto;
+    
+}
+.co-text {
+    padding-top: 90px;
+    text-align: center;
+    flex: 1;
+    justify-items: center;
+}
+.co-img {
+    flex: 1;
+    
+}
+/* end of contact*/
+
+/*footer*/
+footer {
+    display: flex;
+    width: 90%;
+    height: 60px;
+    background-color: #D6DBDF;
+    margin: 0 auto; 
+    margin-top: 20px;
+}
+h5 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+    flex: 2;
+}
+/*ends of footer*/
+/* media*/
+@media screen and (max-width: 1024px){
+ .big-font {
+     font-size: 24;
+     font-weight: 700;
+ }
+ .products {
+    display: table-cell;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 10px;
+
+ }
+ .product1 , .product2 , .product3 {
+     padding-left: 20px;
+     padding-top: 10px;
+ }
+ .iphone {
+    display:table-header-group;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+ }
+ .iphone11 {
+    display: table-header-group;
+    padding-left: 20px;
+    padding-top: 10px;
+    width: 70%;
+    justify-content: center;
+ }
+ .img1 , .color1 , .iph11 {
+     width: 400px;
+ }
+ .color2 , .img2 {
+    width: 400px;
+ }
+ .about-section {
+     width: 90%;
+     margin-left: 27px;
+     margin-bottom: 10px;
+ }
+ .about {
+    display:table-header-group;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 10px;  
+ }
+ .about-text {
+     display: table-header-group;
+     text-align: center;
+     width: 80%;
+     margin: 30px;
+ }
+ .apple-logo {
+    width: 100px;
+ }
+ .iphg {
+     width: 300px;
+     padding-left: 60px;
+ }
+ .con-info {
+    width: 90%;
+    margin-left: 30px;
+    margin-bottom: 10px;
+
+ }.con-ph {
+     width: 250px;
+     padding-top: 30px;
+ }
+
+}
