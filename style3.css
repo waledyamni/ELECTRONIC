@@ -216,10 +216,11 @@ h4:hover {
 .big-font {
     color: #273746  ;
     text-align: center;
-    font-size: 90px;
+    font-size: 100px;
     font-weight: 900;
     text-shadow: 0rem .7rem .5rem #aaa ;
     text-transform: uppercase;
+    padding 10px;
     
 }
 .products {
